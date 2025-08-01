@@ -222,7 +222,7 @@ body {
 .section.day {
   background-color: rgba(228, 195, 172, 0.765);
 }
-/* About Section */
+
     .section.about {
     background-color: rgba(228, 195, 172, 0.765);
       padding: 100px 20px;
@@ -328,7 +328,7 @@ body {
   margin-bottom: 10px;
 }
 
-/* -------------------- GALERÍA -------------------- */
+/* -------------------- GALERiA -------------------- */
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -595,4 +595,69 @@ body {
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
   }
+}@media screen and (max-width: 768px) {
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .about-image::before {
+    display: none;
+  }
+
+  .about-image img {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+  }
+
+  .about-content {
+    padding: 20px;
+  }
+
+  .about-content h2 {
+    font-size: 2rem;
+  }
+
+  .about-content p {
+    font-size: 1rem;
+  }
+
+  .navbar-right {
+    width: 100%;
+    align-items: center;
+  }
+
+  .menu {
+    align-items: center;
+  }
+
+  .menu li a {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .navbar-left .logo {
+    font-size: 1.2rem;
+  }
+
+  .hero {
+    background-position: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .hero-text {
+    font-size: 1.6rem;
+    padding: 10px;
+  }
+}
+
+.decoracion i {
+  color: #fff;
+  text-shadow: 0 0 5px rgba(0,0,0,0.3);
+  font-size: 2.2rem;
 }
